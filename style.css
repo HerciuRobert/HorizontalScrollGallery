@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  height: 700px;
+  width: 1400px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 0;
+  border: 5px rgb(34, 34, 34) solid;
+}
+
+.container.active {
+  cursor: grabbing;
+}
+
+.item {
+  width: 700px;
+  height: 100%;
+  object-fit: cover;
+}
